@@ -1,45 +1,45 @@
-
 li {
-    margin-left: 5px;
+    margin: 5px 0px 10px 5px;
     background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
     max-width: 120px;
     padding: 5px;
     list-style: none;
     box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.575);
-    border:1px solid white
+    border: 1px solid white
 }
-li:hover{
+
+li:hover {
     margin-left: 5px;
     background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
     max-width: 120px;
-    border:1px solid white;
+    border: 1px solid white;
     list-style: none;
-    
+
 }
-a:hover{
-    color:rgb(0, 0, 0)
+
+a:hover {
+    color: rgb(0, 0, 0)
 }
+
 a {
     color: white;
     text-decoration: none;
 }
- *{
-    padding-left:4px;
-    padding-right: 1px;
- }
 
- .row{
-    background-image: linear-gradient(to top, #8ca7d1 0%, #c2fbdc 100%);
-    
-    
-    box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.353);
-    padding:10px;
+
+
+.row {
+ 
+
+
+  
+    padding: 10px;
     margin-bottom: 10px;
- }
+}
 
- img{
-    border-radius: 0px 0px 25px 0px;
+img {
+
     box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.353);
-    border:1px solid white;
+    border: 1px solid white;
 
- }
+}

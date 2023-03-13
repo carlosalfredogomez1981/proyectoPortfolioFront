@@ -1,0 +1,42 @@
+h1{
+    color:chocolate
+}
+
+h2{
+    color: darkgreen;
+}
+
+h4{
+    color: blue;
+}
+
+.box{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    color:rgb(0, 0, 0);
+    border:1px solid  #72a7fd ;
+    margin-bottom: 10px;
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.243);
+}
+
+.box2{
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    color:rgb(0, 0, 0);
+    border:1px solid   #fbed96 ;
+    margin-bottom: 10px;
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.243);
+    
+}
+
+.box3{
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    color:rgb(0, 0, 0);
+    border:1px solid  #9795f0 ;
+    margin-bottom: 10px;
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.243);
+}
