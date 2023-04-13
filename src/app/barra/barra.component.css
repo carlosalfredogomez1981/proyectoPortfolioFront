@@ -1,77 +1,112 @@
-* {
-    padding: 2px;
-    margin: 0px
-}
-
-.container {
-    position: absolute;
-    z-index: 3;
-    top: 30px;
+*{
+    list-style: none;
+    text-decoration: none;
+    display:flex;
+    padding-left: 8px;
    
+}
+
+a{
+   
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.476);
+    padding:10px;
+    margin-bottom: 5px;
+    border-radius: 0px 0px 8px 8px;
+    font-size: large;
+    font-weight:bold;
+    color:rgb(255, 255, 255);
+    background-color: rgba(144, 132, 250, 0.383);
+}
+
+
+a:hover{
+    background-color: rgba(50, 108, 194, 0.763);
+    box-shadow: 3px 5px 3px rgba(255, 255, 255, 0.476);
+    padding:15px;
+    border-radius: 0px 0px 8px 8px;
+    font-size: large;
+    color:rgb(255, 255, 255);
+   
+    border: 1px solid white;
+}
+
+.contenedor{
+    position: absolute;
+    z-index: 2;
+    top:0px;
+    
+    display:block
 
 }
 
-ul {
-    display: flex;
 
 
-}
+@media  (max-width:850px){
+    .contenedor{
+        position: absolute;
+        z-index: 2;
+        top:40px;
+        left:100px;
+        display:none;
+      
+    
+    }
 
-li {
-    margin-left: 5px;
-    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
-    max-width: 120px;
-    padding: 5px;
-    list-style: none;
-    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.29);
-    border:1px solid white
-}
-li:hover{
-    margin-left: 5px;
-    background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
-    max-width: 120px;
-    border:5px solid white;
-    list-style: none;
     
 }
-a:hover{
-    color:rgb(0, 0, 0)
-}
-a {
-    color: white;
-    text-decoration: none;
+
+
+
+
+.container-celu{
+    position: absolute;
+    z-index: 2;
+    top:120px;
+    left:100px;
+    
+    display:none
+
 }
 
-@media (max-width: 768px) {
-    .container {
+
+
+@media  (max-width:850px){
+    .container-celu{
         position: absolute;
-        z-index: 3;
-        top: 300px;
-        left: -2px;
-       
-
-    }
-
-
-    ul {
-        display: block;
-       
-
-
-    }
-
-    li {
-        margin: 5px;
-        background-color: cornflowerblue;
-        max-width: 110px;
-        padding: 5px;
-        list-style: none;
-        text-align: center;
-    }
-
-    a {
+        z-index: 2;
+        top:450px;
+        left:0px;
         
-        color: white;
-        text-decoration: none;
-    }
+        display:block;
+        float: left;
+           }
+
+           
 }
+
+
+@media  (max-width:540px){
+    .container-celu{
+        position: absolute;
+        z-index: 2;
+        top:250px;
+        left:0px;
+        
+        display:block;
+        float: left;
+           }
+}
+
+
+@media  (max-width:290px){
+    .container-celu{
+        position: absolute;
+        z-index: 2;
+        top:150px;
+        left:0px;
+        
+        display:block;
+        float: left;
+           }
+}
+
