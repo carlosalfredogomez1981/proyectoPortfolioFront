@@ -22,6 +22,7 @@ import { VacioComponent } from './vacio/vacio.component';
 import { LoginComponent } from './login/login.component';
 import { interceptorProvider } from './servicios/interceptor-service';
 import { NewExperienciaComponent } from './componentes/contenido/experiencia-laboral/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './componentes/contenido/experiencia-laboral/edit-experiencia/edit-experiencia.component';
 
 
 
@@ -44,6 +45,7 @@ import { NewExperienciaComponent } from './componentes/contenido/experiencia-lab
     VacioComponent,
     LoginComponent,
     NewExperienciaComponent,
+    EditExperienciaComponent,
   ],
   imports: [
     BrowserModule,

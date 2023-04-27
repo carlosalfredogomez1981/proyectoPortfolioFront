@@ -1,0 +1,24 @@
+<div class="container mt-5" *ngIf="expLab" >
+    <h5 style="color:rgb(255, 200, 0)">MODIFICAR EXPERIENCIA LABORAL</h5>
+    
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+    
+    <div class="form-group">
+    <label for="nombreExperiencia">Nombre de Experiencia</label>
+    <input type="text"  class="form-control" id="nombreExperiencia" name="nombreExperiencia" [(ngModel)]="expLab.nombreExperiencia" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="descripcionExperiencia">Descripción</label>
+        <input type="text"  class="form-control" id="descripcionExperiencia" name="descripcionExperiencia" [(ngModel)]="expLab.descripcionExperiencia" required>
+    </div>
+    
+    <button id="boton" class=" mt-3" type="submit"> ACTUALIZAR </button>
+    <button id="boton" class="  mt-3" routerLink="/laboral" >REGRESAR</button>
+    
+    </form>
+    
+    
+    
+    </div>
+    <!--  -->

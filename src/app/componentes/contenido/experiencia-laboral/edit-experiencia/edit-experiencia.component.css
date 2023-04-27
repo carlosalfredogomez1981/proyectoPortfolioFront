@@ -1,0 +1,24 @@
+#boton{
+    padding:3px 10px 3px 10px;
+     
+     background-color: rgb(88, 133, 255);
+     color: aliceblue;
+     border-radius: 8px;
+     margin: 2px 15px 5px 15px;
+     box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
+     border: 1px solid white;
+     
+     
+ }
+ #boton:hover{
+    padding: 3px 10px 3px 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 137, 254);
+    border-radius: 8px;
+    box-shadow: 4px 7px 13px -8px rgba(43, 110, 255, 0.75);
+    border: 1px solid rgb(255, 255, 255);
+}
+.container{
+    background-color: rgba(132, 132, 132, 0.275);
+    text-align: center;
+}

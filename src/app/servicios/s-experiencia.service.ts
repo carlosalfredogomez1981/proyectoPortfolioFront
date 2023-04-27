@@ -16,8 +16,8 @@ public lista(): Observable<Experiencia[]>{
   return this.httpClient.get<Experiencia[]>(this.expURL + 'lista');
 }
 
-public details(id : number): Observable<Experiencia> {
-return this.httpClient.get<Experiencia>(this.expURL + `detail/${id}`)
+public detail(id : number): Observable<Experiencia> {
+return this.httpClient.get<Experiencia>(this.expURL + `detail/${id}`);
 }
 
 public save (experiencia: Experiencia):Observable<any> {
