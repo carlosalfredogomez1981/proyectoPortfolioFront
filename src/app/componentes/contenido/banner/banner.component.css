@@ -23,7 +23,7 @@
     color: rgb(0, 0, 0);
    
     border: 5px solid white;
-    padding: 5px 8px 5px 8px;
+    padding: 5px 6px 5px 6px;
     box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.227);
   }
   
@@ -62,16 +62,15 @@
       background-color: rgba(5, 120, 236, 0.343);
       color: white;
       min-width: 250px;
-      border: 1px solid rgba(255, 255, 255, 0.299);
+      border: 1px solid rgba(255, 255, 255, 0.467);
       padding: 5px 8px 5px 8px;
     }
     .boton:hover {
       margin: 0px;
       background-color: rgb(255, 255, 255);
       color: rgb(0, 26, 255);
-    
       border: 5px solid white;
-      padding: 5px 8px 5px 8px;
+      padding: 5px 2px 5px 2px;
       box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.227);
     }
   

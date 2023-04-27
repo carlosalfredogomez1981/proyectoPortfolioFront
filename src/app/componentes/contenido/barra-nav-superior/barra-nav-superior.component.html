@@ -1,38 +1,4 @@
-<!-- <nav class="navbar navbar fondo_barra">
-   
-      <a class="navbar-brand" href="#"><img src="../../../../assets/LOGO ARG.png" alt="logo argentina programa" id="logo" ></a>
-      
-  
-      
-     
-      <div class="screem" >
-        <ul >
-          <li >
-            <a class=" " aria-current="page" href="#"><img src="../../../../assets/logofacebook.png" alt=""></a>
-          </li>
-          <li >
-            <a class="" href="#"><img src="../../../../assets/logoinstagram.png" alt=""></a>
-         </li>
-         <li >
-            <a class="" href="#"><img src="../../../../assets/logogithub.png" alt=""></a>
-         </li>
-         <li >
-            <a class="" href="#"><img src="../../../../assets/logowhatsapp.png" alt=""></a>
-         </li>
-        </ul>
-        
-      </div>
-   
-    
-   
-    <form class="busqueda ">
-      <input class="form-control me-2" type="search" placeholder="escibe aqui tu busqueda" aria-label="Search">
-      <button class="btn btn-outline-succes boton" type="submit">Buscar</button>
-    </form> 
-    
 
-    <button class="login"routerLink="/">LOGIN</button>  
-  </nav> -->
 
  
 
@@ -58,7 +24,9 @@
             <a  href="#"><img src="../../../../assets/logowhatsapp.png" alt=""></a>
           </li>
           <li >
-             <button class="login"routerLink="/">LOGIN</button>  
+            <!--<a class="login" routerLink="/login">LOGIN</a> --> 
+            <button type="button" class="btn btn-outline-ligth" (click)="login()" *ngIf="!isLogged" >INGRESAR</button>
+            <button type="button" class="btn btn-outline-ligth" (click)="onLogOut()" *ngIf="isLogged" >SALIR</button>
           </li>
          
         </ul>

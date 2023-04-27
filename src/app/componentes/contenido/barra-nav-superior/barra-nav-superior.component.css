@@ -17,12 +17,7 @@
    display:none;
 
 }
-.login{
-    background-color: #00000024;
-    color: white;
-    margin: 15px;
-    
-}
+
 .navega{
     display: flex;
     justify-content: space-between;
@@ -44,11 +39,5 @@
         justify-content: flex-end;
        
      }
-     .login{
-        background-color: #00000024;
-        color: white;
-        margin: 15px;
-       
-        
-    }
+    
 }

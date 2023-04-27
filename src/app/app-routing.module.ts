@@ -9,11 +9,13 @@ import { ProyectosComponent } from './componentes/contenido/proyectos/proyectos.
 
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { VacioComponent } from './vacio/vacio.component';
+import { LoginComponent } from './login/login.component';
+import { NewExperienciaComponent } from './componentes/contenido/experiencia-laboral/new-experiencia/new-experiencia.component';
 const routes: Routes = [
 
   { path: '', component: PortfolioComponent  },
   { path: 'vacio', component: VacioComponent },
- 
+ {path:'nueva', component : NewExperienciaComponent},
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'laboral', component: ExperienciaLaboralComponent },
   { path: 'tecnologias', component: ProgresoComponent },
@@ -21,6 +23,7 @@ const routes: Routes = [
   {path:'formacion', component: FormacionAcademicaComponent},
   {path:'proyectos', component: ProyectosComponent},
   {path:'actividades', component: RedesSocialesComponent},
+  {path:'login', component: LoginComponent}
   
 ];
 

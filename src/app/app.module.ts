@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ContenedorSuperiorComponent } from './componentes/contenedor-superior/contenedor-superior.component';
 import { BarraNavSuperiorComponent } from './componentes/contenido/barra-nav-superior/barra-nav-superior.component';
 import { BannerComponent } from './componentes/contenido/banner/banner.component';
-import { FotoPerfilComponent } from './componentes/contenido/foto-perfil/foto-perfil.component';
+
 import { AcercaDeComponent } from './componentes/contenido/acerca-de/acerca-de.component';
 import { FormacionAcademicaComponent } from './componentes/contenido/formacion-academica/formacion-academica.component';
 import { ExperienciaLaboralComponent } from './componentes/contenido/experiencia-laboral/experiencia-laboral.component';
@@ -19,6 +19,10 @@ import { ProyectosComponent } from './componentes/contenido/proyectos/proyectos.
 import { FooterComponent } from './componentes/footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { VacioComponent } from './vacio/vacio.component';
+import { LoginComponent } from './login/login.component';
+import { interceptorProvider } from './servicios/interceptor-service';
+import { NewExperienciaComponent } from './componentes/contenido/experiencia-laboral/new-experiencia/new-experiencia.component';
+
 
 
 @NgModule({
@@ -27,7 +31,7 @@ import { VacioComponent } from './vacio/vacio.component';
     ContenedorSuperiorComponent,
     BarraNavSuperiorComponent,
     BannerComponent,
-    FotoPerfilComponent,
+    
     AcercaDeComponent,
     FormacionAcademicaComponent,
     ExperienciaLaboralComponent,
@@ -38,6 +42,8 @@ import { VacioComponent } from './vacio/vacio.component';
     FooterComponent,
     PortfolioComponent,
     VacioComponent,
+    LoginComponent,
+    NewExperienciaComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +60,9 @@ import { VacioComponent } from './vacio/vacio.component';
       animationDuration: 300,
     }),
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

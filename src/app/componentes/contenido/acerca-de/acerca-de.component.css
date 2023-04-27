@@ -59,6 +59,7 @@
     .perfil{
         position: relative;
       top:0px;
+      border-radius: 50px;
      
     }
 }
