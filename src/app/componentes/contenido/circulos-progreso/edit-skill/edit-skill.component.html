@@ -1,1 +1,23 @@
-<p>edit-skill works!</p>
+<div class="container mt-5" *ngIf="skill" >
+    <h5 style="color:rgb(65, 186, 4)">MODIFICAR HABILIDAD</h5>
+    
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+    
+    <div class="form-group">
+    <label for="nombre">HABILIDAD</label>
+    <input type="text"  class="form-control" id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="porcentaje">PORCENTAJE</label>
+        <input type="text"  class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
+    </div>
+    
+    <button id="boton" class=" mt-3" type="submit"> ACTUALIZAR HABILIDAD </button>
+    <button id="boton" class="  mt-3" routerLink="/habilidades" >REGRESAR</button>
+    
+    </form>
+    
+    
+    
+    </div>

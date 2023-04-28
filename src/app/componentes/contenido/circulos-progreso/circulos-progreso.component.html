@@ -3,10 +3,10 @@
  
   <button class=" boton"routerLink="/">REGRESAR</button>
   <h3>soft and hard skills</h3>
-
+  <button type="button" routerLink="/newskill"  *ngIf="isLogged" class="btn btn-warning">NUEVA</button>
 
   <div class="row">
-    <div class="col-xs-11 col-sm-5 col-md-3 col-lg-2 card">
+    <div class="col-xs-11 col-sm-5 col-md-3 col-lg-2 card" *ngFor="let skill of skill">
       <h5>{{skill.nombre}}</h5>
       <circle-progress
         [percent]="(skill.porcentaje)"
@@ -20,7 +20,7 @@
       ></circle-progress>
 
       <td *ngIf="isLogged">
-        <button   class="btn btn-warning" routerLink="/edithys/{{skill.id}}">
+        <button   class="btn btn-warning" routerLink="/editskill/{{skill.id}}">
           editar
         </button>
         </td>
@@ -37,7 +37,7 @@
     </div>
   </div>
 
-
+  <h5>SEGUIMOS PROGRESANDO</h5>
 
 
 </div>

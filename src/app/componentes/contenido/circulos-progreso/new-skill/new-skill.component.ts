@@ -25,10 +25,10 @@ onCreate(): void {
 const skill = new Skill(this.nombre, this.porcentaje);
 this.skillS.save(skill).subscribe(
 data => { alert("habilidad nueva agregada");
-this.router.navigate(['']);
+this.router.navigate(['habilidades']);
 }, err => {
   alert("error al crear");
-this.router.navigate(['']);
+this.router.navigate(['habilidades']);
 }
 
 

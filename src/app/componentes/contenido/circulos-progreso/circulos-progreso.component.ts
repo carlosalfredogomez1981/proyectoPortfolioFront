@@ -13,13 +13,13 @@ import { TokenService } from 'src/app/servicios/token.service';
 export class CirculosProgresoComponent implements OnInit  {
   skill: Skill [] = [];
  
-  constructor(private skillS: SkillService, private tokenS: TokenService){}
+  constructor(private skillS: SkillService, private tokenService: TokenService){}
 
   isLogged = false;
 
 ngOnInit(): void {
    this.cargarSkills();
-   if(this.tokenS.getToken()){
+   if(this.tokenService.getToken()){
     this.isLogged = true;
   } else {
     this.isLogged = false;
@@ -41,10 +41,6 @@ delete(id: number){
       err => {alert("error al borrar")}
     )
   }
-
-
-
-
-
-  
+ 
+}
 }
