@@ -1,4 +1,51 @@
-<div class="contenido">
+
+<div class="contenido container">
+
+  <button class=" boton"routerLink="/">REGRESAR</button>
+
+  <h4>FORMACIÓN</h4>
+
+    <table class="table"> 
+  <thead>
+    <td><h6> Formación</h6></td>
+    <td><h6>Descripcion</h6></td>
+    <td></td>
+    <td></td>
+  </thead>
+<tbody>
+<tr *ngFor="let Educacion of educacion" >
+
+<td><h5>{{Educacion.nombreE}}</h5></td>
+<td>{{Educacion.descripcionE}}</td>
+
+<td *ngIf="isLogged">
+  <button   class="btn btn-warning" routerLink="/editEdu/{{Educacion.id}}">
+    editar
+  </button>
+  </td>
+
+<td *ngIf="isLogged">
+  <button   class="btn btn-danger" (click)="delete(Educacion.id)">
+    borrar
+  </button>
+</td>
+
+</tr>
+</tbody>
+    </table>
+
+    <button type="button" routerLink="/nuevaEdu"  *ngIf="isLogged" class="btn btn-warning">NUEVA</button>
+   </div> 
+
+
+
+
+
+
+
+
+
+<!--<div class="contenido">
   <div class="incrustar">
     <div class="botones">
       <button class="boton" routerLink="/">REGRESAR</button>
@@ -8,7 +55,7 @@
   <div class="card">
     <div class="card-header">
       <h4>Título Secundario</h4>
-      <!--ts de angular-->
+      
 
       <div class="card-body oculto">
         <h5 class="card-title">Bachiller con Orientación Docente</h5>
@@ -168,3 +215,4 @@
     </div>
   </div>
 </div>
+-->

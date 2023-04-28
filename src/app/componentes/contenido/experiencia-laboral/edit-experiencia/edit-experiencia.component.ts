@@ -18,13 +18,13 @@ export class EditExperienciaComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const id = this.activatedRouter.snapshot.params['id']; //esta linea captura el id
+    const id = this.activatedRouter.snapshot.params['id']; 
     this.sExperiencia.detail(id).subscribe(
       data => {
         this.expLab = data;
       },
       err => {
-        alert('error al modificar');
+        alert('error al modificar experiencia');
         this.router.navigate(['laboral']);
       }
     );

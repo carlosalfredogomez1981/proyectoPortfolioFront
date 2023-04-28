@@ -23,6 +23,8 @@ import { LoginComponent } from './login/login.component';
 import { interceptorProvider } from './servicios/interceptor-service';
 import { NewExperienciaComponent } from './componentes/contenido/experiencia-laboral/new-experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './componentes/contenido/experiencia-laboral/edit-experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './componentes/contenido/formacion-academica/neweducacion/neweducacion.component';
+import { EditeducacionComponent } from './componentes/contenido/formacion-academica/editeducacion/editeducacion.component';
 
 
 
@@ -46,6 +48,8 @@ import { EditExperienciaComponent } from './componentes/contenido/experiencia-la
     LoginComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,111 +1,70 @@
-*{
-    text-decoration: none;
-    list-style: none;
-}
-li{
-    padding-left: 5px;
-}
-.encabezados h5 {
-    color: rgb(88, 88, 88);
+.encabezados h5{
+    color:rgb(88, 88, 88);
     text-align: center;
     padding: 2px;
 }
-
-.contenido {
-display:flex-box;
-padding:10px;
-border-radius: 15px;
+.contenido{
+    display:flex-box;
     border: 1px solid rgb(255, 255, 255);
-    margin: 20px 5px 20px 5px;
-    box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
+    margin-top:10px ;
+    box-shadow: 4px 7px 13px -8px rgba(0,0,0,0.75);
     border: 1px solid white;
     background-color: rgb(230, 239, 247);
     text-align: center;
 
 }
-
-h3 {
-    text-align: center;
-    background-color: rgb(88, 133, 255);
-    color: aliceblue;
-    border-radius: 8px;
-    margin: 10px 15px 5px 15px;
-    box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
-    border: 1px solid white;
-}
-
-.titulos {
-    margin-left: 5px;
-}
-
 h4{
-    background-color: rgb(119, 213, 205);
-   
-    padding: 0px 0px 2px 20px;
-    color: white;
-    border: 1px solid white;
-    
-
-}
-
-#boton{
-   padding:3px 10px 3px 10px;
     text-align: center;
     background-color: rgb(88, 133, 255);
     color: aliceblue;
     border-radius: 8px;
     margin: 10px 15px 5px 15px;
-    box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
-    border: 1px solid white;
     
+    border: 1px solid white;
+}
+h6{
+  color:blue;
+  background-color: white;
+  border-radius: 5px;
 }
 
+.fondo{
+    background-color: rgb(119, 213, 205);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    
+}
 
 
 @media screen and (max-width: 500px) {
-    h3 {
+  
+
+     h3 {
         background-color: rgb(88, 133, 255);
         color: aliceblue;
         border-radius: 8px;
         margin: 10px 15px 5px 15px;
-        box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
+        
         border: 1px solid white;
-
+        
         padding-right: 30px;
+        
+        
     }
 }
 
-.mas_desarrollo{
-    margin-top: 20px;
-    box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
-}
-
-
-.lenguajes {
-    
-    background-color: rgb(41, 130, 162);
-    border-radius: 5px;
-    border: 1px solid rgb(255, 255, 255);
-    margin-top: 5px;
-    list-style: none;
-    padding:10px
-}
-
-.lenguajes li {
-    font-weight: bold;
-    margin-right: 8px;
-    color:white;
-}
 
 #boton{
     padding:3px 10px 3px 10px;
-     text-align: center;
+     
      background-color: rgb(88, 133, 255);
      color: aliceblue;
      border-radius: 8px;
-     margin: 10px 15px 5px 15px;
+     margin: 2px 15px 5px 15px;
      box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
      border: 1px solid white;
+     
      
  }
  #boton:hover{
@@ -115,13 +74,6 @@ h4{
     border-radius: 8px;
     box-shadow: 4px 7px 13px -8px rgba(43, 110, 255, 0.75);
     border: 1px solid rgb(255, 255, 255);
-}
-
-.carrusel{
-    border-radius: 5px;
-    padding:5px;
-    box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
-
 }
 
 /*navegacion*/

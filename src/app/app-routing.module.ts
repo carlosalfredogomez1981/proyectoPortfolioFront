@@ -11,6 +11,8 @@ import { VacioComponent } from './vacio/vacio.component';
 import { LoginComponent } from './login/login.component';
 import { NewExperienciaComponent } from './componentes/contenido/experiencia-laboral/new-experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './componentes/contenido/experiencia-laboral/edit-experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './componentes/contenido/formacion-academica/neweducacion/neweducacion.component';
+import { EditeducacionComponent } from './componentes/contenido/formacion-academica/editeducacion/editeducacion.component';
 
 const routes: Routes = [
   { path: '', component: PortfolioComponent },
@@ -24,7 +26,9 @@ const routes: Routes = [
   { path: 'proyectos', component: ProyectosComponent },
   { path: 'actividades', component: RedesSocialesComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'edit/:id', component:EditExperienciaComponent }
+  { path: 'edit/:id', component:EditExperienciaComponent },
+  { path: 'nuevaEdu', component:NeweducacionComponent},
+  { path: 'editEdu/:id', component:EditeducacionComponent }
 ];
 
 @NgModule({

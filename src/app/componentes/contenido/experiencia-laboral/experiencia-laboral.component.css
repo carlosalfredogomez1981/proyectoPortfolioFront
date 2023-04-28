@@ -22,6 +22,11 @@ h4{
     
     border: 1px solid white;
 }
+h6{
+  color:blue;
+  background-color: white;
+  border-radius: 5px;
+}
 
 .fondo{
     background-color: rgb(119, 213, 205);

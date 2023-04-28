@@ -2,12 +2,12 @@
 
   <button class=" boton"routerLink="/">REGRESAR</button>
 
-  <h4>EXPERIENCIA LABORAL</h4>
+  <h4>LABORAL</h4>
 
     <table class="table"> 
   <thead>
-    <td>Experiencia</td>
-    <td>Descripcion</td>
+    <td><h6> Experiencia</h6></td>
+    <td><h6>Descripcion</h6></td>
     <td></td>
     <td></td>
   </thead>
@@ -24,7 +24,7 @@
   </td>
 
 <td *ngIf="isLogged">
-  <button   class="btn btn-danger" routerLink="#">
+  <button   class="btn btn-danger" (click)="delete(Experiencia.id)">
     borrar
   </button>
 </td>
