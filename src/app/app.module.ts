@@ -25,6 +25,8 @@ import { NewExperienciaComponent } from './componentes/contenido/experiencia-lab
 import { EditExperienciaComponent } from './componentes/contenido/experiencia-laboral/edit-experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './componentes/contenido/formacion-academica/neweducacion/neweducacion.component';
 import { EditeducacionComponent } from './componentes/contenido/formacion-academica/editeducacion/editeducacion.component';
+import { EditSkillComponent } from './componentes/contenido/circulos-progreso/edit-skill/edit-skill.component';
+import { NewSkillComponent } from './componentes/contenido/circulos-progreso/new-skill/new-skill.component';
 
 
 
@@ -50,6 +52,8 @@ import { EditeducacionComponent } from './componentes/contenido/formacion-academ
     EditExperienciaComponent,
     NeweducacionComponent,
     EditeducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent,
   ],
   imports: [
     BrowserModule,
