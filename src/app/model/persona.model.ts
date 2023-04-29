@@ -1,37 +1,38 @@
-export class persona {
-    id?: number;
-    nombre:String;
-    apellido: String;
-    img: String;
-    dni:String;
-    nacionalidad:String;
-    fecha_nacimiento:String;
-    mail:String;
-    telefono:String;
-    descripcion:String;
+export class persona 
+{
+  id?: number;
+  nombre: string;
+  apellido: string;
+  imgBanner: string;
+  imgPerfil: string;
+  dni: string;
+  nacionalidad: string;
+  fecha_nacimiento: string;
+  mail: string;
+  telefono: string;
+  descripcion: string;
 
-    
-
-    constructor (nombre:String, 
-        apellido:String, 
-        img:String,
-        dni:String,
-        nacionalidad:String,
-        fecha_nacimiento:String,
-        mail:String,
-        telefono:String,
-        descripcion:String) { 
-this.nombre = nombre;
-this.apellido = apellido;
-this.img = img;
-this.dni = dni;
-this.nacionalidad = nacionalidad;
-this.fecha_nacimiento = fecha_nacimiento;
-this.mail = mail;
-this.telefono = telefono;
-this.descripcion = descripcion;
-
-    }
+  constructor(
+    nombre: string,
+    apellido: string,
+    imgBanner: string,
+    imgPerfil: string,
+    dni: string,
+    nacionalidad: string,
+    fecha_nacimiento: string,
+    mail: string,
+    telefono: string,
+    descripcion: string
+  ) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.imgBanner = imgBanner;
+    this.imgPerfil = imgPerfil;
+    this.dni = dni;
+    this.nacionalidad = nacionalidad;
+    this.fecha_nacimiento = fecha_nacimiento;
+    this.mail = mail;
+    this.telefono = telefono;
+    this.descripcion = descripcion;
+  }
 }
-
-

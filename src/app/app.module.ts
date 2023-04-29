@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { ContenedorSuperiorComponent } from './componentes/contenedor-superior/contenedor-superior.component';
 import { BarraNavSuperiorComponent } from './componentes/contenido/barra-nav-superior/barra-nav-superior.component';
 import { BannerComponent } from './componentes/contenido/banner/banner.component';
-
 import { AcercaDeComponent } from './componentes/contenido/acerca-de/acerca-de.component';
 import { FormacionAcademicaComponent } from './componentes/contenido/formacion-academica/formacion-academica.component';
 import { ExperienciaLaboralComponent } from './componentes/contenido/experiencia-laboral/experiencia-laboral.component';
