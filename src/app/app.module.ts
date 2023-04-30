@@ -26,6 +26,7 @@ import { NeweducacionComponent } from './componentes/contenido/formacion-academi
 import { EditeducacionComponent } from './componentes/contenido/formacion-academica/editeducacion/editeducacion.component';
 import { EditSkillComponent } from './componentes/contenido/circulos-progreso/edit-skill/edit-skill.component';
 import { NewSkillComponent } from './componentes/contenido/circulos-progreso/new-skill/new-skill.component';
+import { EditAcercaDeComponent } from './componentes/contenido/acerca-de/edit-acerca-de/edit-acerca-de.component';
 
 
 
@@ -53,6 +54,8 @@ import { NewSkillComponent } from './componentes/contenido/circulos-progreso/new
     EditeducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
+    EditAcercaDeComponent,
+    
   ],
   imports: [
     BrowserModule,

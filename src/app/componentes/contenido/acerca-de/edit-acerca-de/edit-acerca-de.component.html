@@ -1,0 +1,137 @@
+<div class="container mt-5" *ngIf="persona">
+  <h5 style="color: rgb(255, 200, 0)">MODIFICAR DATOS PERSONA</h5>
+
+  <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+    
+    <div class="form-group">
+      <label for="nombre">NOMBRE</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nombre"
+        name="nombre"
+        [(ngModel)]="persona.nombre"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="apellido">APELLIDO</label>
+      <input
+        type="text"
+        class="form-control"
+        id="apellido"
+        name="apellido"
+        [(ngModel)]="persona.apellido"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+        <label for="fecha_nacimiento">FECHA DE NACIMIENTO</label>
+        <input
+          type="text"
+          class="form-control"
+          id="fecha_nacimiento"
+          name="fecha_nacimiento"
+          [(ngModel)]="persona.fecha_nacimiento"
+          required
+        />
+      </div>
+
+
+    <div class="form-group">
+        <label for="dni">DNI</label>
+        <input
+          type="text"
+          class="form-control"
+          id="dni"
+          name="dni"
+          [(ngModel)]="persona.dni"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="nacionalidad">NACIONALIDAD</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nacionalidad"
+          name="nacionalidad"
+          [(ngModel)]="persona.nacionalidad"
+          required
+        />
+      </div>
+
+    
+
+    <div class="form-group">
+        <label for="descripcion">DESCRIPCIÓN</label>
+        <input
+          type="text"
+          class="form-control"
+          id="descripcion"
+          name="descripcion"
+          [(ngModel)]="persona.descripcion"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">TELEFONO</label>
+        <input
+          type="text"
+          class="form-control"
+          id="telefono"
+          name="telefono"
+          [(ngModel)]="persona.telefono"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="mail">CORREO ELECTRÓNICO</label>
+        <input
+          type="text"
+          class="form-control"
+          id="mail"
+          name="mail"
+          [(ngModel)]="persona.mail"
+          required
+        />
+      </div>
+
+
+      <div class="form-group">
+        <label for="imgBanner">URL IMABEN DE BANNER</label>
+        <input
+          type="text"
+          class="form-control"
+          id="imgBanner"
+          name="imgBanner"
+          [(ngModel)]="persona.imgBanner"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="imgPerfil">URL IMABEN DE PERFIL</label>
+        <input
+          type="text"
+          class="form-control"
+          id="imgPerfil"
+          name="imgPerfil"
+          [(ngModel)]="persona.imgPerfil"
+          required
+        />
+      </div>
+
+
+
+
+
+    <button id="boton" class="mt-3" type="submit">ACTUALIZAR PERSONA</button>
+  </form>
+</div>

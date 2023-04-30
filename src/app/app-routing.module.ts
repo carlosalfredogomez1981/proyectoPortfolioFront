@@ -15,6 +15,7 @@ import { NeweducacionComponent } from './componentes/contenido/formacion-academi
 import { EditeducacionComponent } from './componentes/contenido/formacion-academica/editeducacion/editeducacion.component';
 import { NewSkillComponent } from './componentes/contenido/circulos-progreso/new-skill/new-skill.component';
 import { EditSkillComponent } from './componentes/contenido/circulos-progreso/edit-skill/edit-skill.component';
+import { EditAcercaDeComponent } from './componentes/contenido/acerca-de/edit-acerca-de/edit-acerca-de.component';
 
 const routes: Routes = [
   { path: '', component: PortfolioComponent },
@@ -32,7 +33,8 @@ const routes: Routes = [
   { path: 'nuevaEdu', component:NeweducacionComponent},
   { path: 'editEdu/:id', component:EditeducacionComponent },
   { path: 'newskill', component: NewSkillComponent},
-  { path: 'editskill/:id', component: EditSkillComponent}
+  { path: 'editskill/:id', component: EditSkillComponent},
+  { path: 'editAcercaDe/:id', component: EditAcercaDeComponent}
 
 
 
