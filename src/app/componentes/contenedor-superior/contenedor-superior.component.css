@@ -1,3 +1,9 @@
 .contenedor{
     background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 }
+.visible{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

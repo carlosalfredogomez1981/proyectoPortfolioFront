@@ -1,119 +1,109 @@
-.encabezados h5{
-    color:rgb(88, 88, 88);
-    text-align: center;
-    padding: 2px;
+.card{
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.323);
 }
-.contenido{
-    display:flex-box;
-    border: 1px solid rgb(255, 255, 255);
-    margin-top:10px ;
-    box-shadow: 4px 7px 13px -8px rgba(0,0,0,0.75);
-    border: 1px solid white;
-    background-color: rgb(230, 239, 247);
-    text-align: center;
-
-}
-h4{
-    text-align: center;
-    background-color: rgb(88, 133, 255);
-    color: aliceblue;
-    border-radius: 8px;
-    margin: 10px 15px 5px 15px;
-    
-    border: 1px solid white;
-}
-h6{
-  color:blue;
-  background-color: white;
-  border-radius: 5px;
+.encabezados h5 {
+  color: rgb(88, 88, 88);
+  text-align: center;
+  padding: 2px;
 }
 
-.fondo{
-    background-color: rgb(119, 213, 205);
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    
+.contenido {
+  display: flex-box;
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 10px;
+  box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
+  border: 1px solid white;
+  background-color: rgb(230, 239, 247);
+  text-align: center;
+
+}
+
+h5 {
+  color: blue;
+}
+
+.fondo {
+  background-color: rgb(119, 213, 205);
+  color: white;
+  text-align: center;
+  font-weight: bold;
 }
 
 
 @media screen and (max-width: 500px) {
-  
 
-     h3 {
-        background-color: rgb(88, 133, 255);
-        color: aliceblue;
-        border-radius: 8px;
-        margin: 10px 15px 5px 15px;
-        
-        border: 1px solid white;
-        
-        padding-right: 30px;
-        
-        
-    }
+
+  h3 {
+    background-color: rgb(88, 133, 255);
+    color: aliceblue;
+    border-radius: 8px;
+    margin: 10px 15px 5px 15px;
+    border: 1px solid white;
+    padding-right: 30px;
+  }
 }
 
 
-#boton{
-    padding:3px 10px 3px 10px;
-     
-     background-color: rgb(88, 133, 255);
-     color: aliceblue;
-     border-radius: 8px;
-     margin: 2px 15px 5px 15px;
-     box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
-     border: 1px solid white;
-     
-     
- }
- #boton:hover{
-    padding: 3px 10px 3px 10px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(2, 137, 254);
-    border-radius: 8px;
-    box-shadow: 4px 7px 13px -8px rgba(43, 110, 255, 0.75);
-    border: 1px solid rgb(255, 255, 255);
+#boton {
+  padding: 3px 10px 3px 10px;
+  background-color: rgb(88, 133, 255);
+  color: aliceblue;
+  border-radius: 8px;
+  margin: 2px 15px 5px 15px;
+  box-shadow: 4px 7px 13px -8px rgba(0, 0, 0, 0.75);
+  border: 1px solid white;
+
+
+}
+
+#boton:hover {
+  padding: 3px 10px 3px 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 137, 254);
+  border-radius: 8px;
+  box-shadow: 4px 7px 13px -8px rgba(43, 110, 255, 0.75);
+  border: 1px solid rgb(255, 255, 255);
 }
 
 /*navegacion*/
 
 .boton {
+  margin: 5px;
+  background-color: rgba(5, 120, 236, 0.307);
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.299);
+  padding: 5px 8px 5px 8px;
+}
+
+.boton:hover {
+  margin: 0px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 26, 255);
+
+  border: 5px solid white;
+  padding: 5px 8px 5px 8px;
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.227);
+}
+
+.botones {
+  margin: 0px 0px 2px 20px;
+
+
+}
+
+@media (max-width: 900px) {
+
+
+  .boton {
+
     margin: 5px;
-    background-color: rgba(5, 120, 236, 0.307);
+    background-color: rgba(5, 120, 236, 0.503);
     color: white;
-  
+
     border: 1px solid rgba(255, 255, 255, 0.299);
     padding: 5px 8px 5px 8px;
   }
-  
-  .boton:hover {
-    margin: 0px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 26, 255);
-  
-    border: 5px solid white;
-    padding: 5px 8px 5px 8px;
-    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.227);
-  }
-  
-  .botones {
-    margin: 0px 0px 2px 20px;
-   
-  
-  }
-  @media (max-width: 900px) {
-  
-   
-    .boton {
-      
-      margin: 5px;
-      background-color: rgba(5, 120, 236, 0.503);
-      color: white;
-    
-      border: 1px solid rgba(255, 255, 255, 0.299);
-      padding: 5px 8px 5px 8px;
-    }
-  
-  
-  }
+
+
+}

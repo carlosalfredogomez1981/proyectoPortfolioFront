@@ -59,7 +59,7 @@
     .perfil{
         position: relative;
       top:0px;
-      border-radius: 50px;
+      border-radius: 500px;
      
     }
 }
@@ -99,6 +99,7 @@
 .perfil{
     position: relative;
    bottom: 60px;
+   border-radius: 500px;
 }
 
 img{

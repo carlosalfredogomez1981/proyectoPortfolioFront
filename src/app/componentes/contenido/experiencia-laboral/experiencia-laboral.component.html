@@ -1,43 +1,43 @@
 <div class="contenido container">
+  <button class="boton" routerLink="/">REGRESAR</button>
+  
+  <h4>EXPERIENCIA LABORAL</h4>
 
-  <button class=" boton"routerLink="/">REGRESAR</button>
+  <div class="card mb-5" *ngFor="let Experiencia of expe">
+    <div class="card-header">
+      <h5>{{ Experiencia.nombreExperiencia }}</h5>
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{ Experiencia.descripcionExperiencia }}</p>
+    </div>
+    <div class="card-footer ">
+      <button
+        *ngIf="isLogged"
+        class="btn btn-warning"
+        routerLink="/edit/{{ Experiencia.id }}">
+        editar
+      </button>
 
-  <h4>LABORAL</h4>
-
-    <table class="table"> 
-  <thead>
-    <td><h6> Experiencia</h6></td>
-    <td><h6>Descripcion</h6></td>
-    <td></td>
-    <td></td>
-  </thead>
-<tbody>
-<tr *ngFor="let Experiencia of expe" >
-
-<td><h5>{{Experiencia.nombreExperiencia}}</h5></td>
-<td>{{Experiencia.descripcionExperiencia}}</td>
-
-<td *ngIf="isLogged">
-  <button   class="btn btn-warning" routerLink="/edit/{{Experiencia.id}}">
-    editar
+      <button 
+        *ngIf="isLogged"
+        class="btn btn-danger m-1"
+        (click)="delete(Experiencia.id)">
+        borrar
+      </button>
+    </div>
+  </div>
+  <button
+    type="button"
+    routerLink="/nueva"
+    *ngIf="isLogged"
+    class="btn btn-warning m-3">
+    NUEVA EXPERIENCIA LABORAL
   </button>
-  </td>
-
-<td *ngIf="isLogged">
-  <button   class="btn btn-danger" (click)="delete(Experiencia.id)">
-    borrar
-  </button>
-</td>
-
-</tr>
-</tbody>
-    </table>
-
-    <button type="button" routerLink="/nueva"  *ngIf="isLogged" class="btn btn-warning">NUEVA</button>
-   </div> 
+</div>
 
 
-    <!--
+<app-footer></app-footer>
+<!--
     <div class="card">
       <div class="card-header fondo">
         SUBOFICIAL DE LA JEFATURA MILITAR 

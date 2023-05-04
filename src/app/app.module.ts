@@ -27,8 +27,9 @@ import { EditeducacionComponent } from './componentes/contenido/formacion-academ
 import { EditSkillComponent } from './componentes/contenido/circulos-progreso/edit-skill/edit-skill.component';
 import { NewSkillComponent } from './componentes/contenido/circulos-progreso/new-skill/new-skill.component';
 import { EditAcercaDeComponent } from './componentes/contenido/acerca-de/edit-acerca-de/edit-acerca-de.component';
-
-
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,6 @@ import { EditAcercaDeComponent } from './componentes/contenido/acerca-de/edit-ac
     ContenedorSuperiorComponent,
     BarraNavSuperiorComponent,
     BannerComponent,
-    
     AcercaDeComponent,
     FormacionAcademicaComponent,
     ExperienciaLaboralComponent,
@@ -55,7 +55,6 @@ import { EditAcercaDeComponent } from './componentes/contenido/acerca-de/edit-ac
     EditSkillComponent,
     NewSkillComponent,
     EditAcercaDeComponent,
-    
   ],
   imports: [
     BrowserModule,
@@ -71,10 +70,10 @@ import { EditAcercaDeComponent } from './componentes/contenido/acerca-de/edit-ac
       innerStrokeColor: '#C7E596',
       animationDuration: 300,
     }),
+      provideFirebaseApp(() => initializeApp(environment.firebase)),
+      provideStorage(() => getStorage()),
   ],
-  providers: [
-    interceptorProvider
-  ],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

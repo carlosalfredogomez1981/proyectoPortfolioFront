@@ -1,4 +1,6 @@
 
+
+
 <div class="contenido container">
 
   <button class=" boton"routerLink="/">REGRESAR</button>
@@ -9,14 +11,13 @@
   <thead>
     <td><h6> Formación</h6></td>
     <td><h6>Descripcion</h6></td>
-    <td></td>
-    <td></td>
+   
   </thead>
 <tbody>
 <tr *ngFor="let Educacion of educacion" >
 
-<td><h5>{{Educacion.nombreE}}</h5></td>
-<td>{{Educacion.descripcionE}}</td>
+<td ><h5>{{Educacion.nombreE}}</h5></td>
+<td class="mb-3">{{Educacion.descripcionE}}</td>
 
 <td *ngIf="isLogged">
   <button   class="btn btn-warning" routerLink="/editEdu/{{Educacion.id}}">
@@ -38,7 +39,7 @@
    </div> 
 
 
-
+   <app-footer></app-footer>
 
 
 
