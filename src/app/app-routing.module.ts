@@ -4,7 +4,7 @@ import { CirculosProgresoComponent } from './componentes/contenido/circulos-prog
 import { ExperienciaLaboralComponent } from './componentes/contenido/experiencia-laboral/experiencia-laboral.component';
 import { FormacionAcademicaComponent } from './componentes/contenido/formacion-academica/formacion-academica.component';
 import { ProgresoComponent } from './componentes/contenido/progreso/progreso.component';
-import { RedesSocialesComponent } from './componentes/contenido/redes-sociales/redes-sociales.component';
+
 import { ProyectosComponent } from './componentes/contenido/proyectos/proyectos.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { VacioComponent } from './vacio/vacio.component';
@@ -16,6 +16,8 @@ import { EditeducacionComponent } from './componentes/contenido/formacion-academ
 import { NewSkillComponent } from './componentes/contenido/circulos-progreso/new-skill/new-skill.component';
 import { EditSkillComponent } from './componentes/contenido/circulos-progreso/edit-skill/edit-skill.component';
 import { EditAcercaDeComponent } from './componentes/contenido/acerca-de/edit-acerca-de/edit-acerca-de.component';
+import { NuevoProyectoComponent } from './componentes/contenido/proyectos/nuevo-proyecto/nuevo-proyecto.component';
+import { EditarProyectoComponent } from './componentes/contenido/proyectos/editar-proyecto/editar-proyecto.component';
 
 const routes: Routes = [
   { path: '', component: PortfolioComponent },
@@ -27,14 +29,17 @@ const routes: Routes = [
   { path: 'habilidades', component: CirculosProgresoComponent },
   { path: 'formacion', component: FormacionAcademicaComponent },
   { path: 'proyectos', component: ProyectosComponent },
-  { path: 'actividades', component: RedesSocialesComponent },
+
   { path: 'login', component: LoginComponent },
   { path: 'edit/:id', component:EditExperienciaComponent },
   { path: 'nuevaEdu', component:NeweducacionComponent},
   { path: 'editEdu/:id', component:EditeducacionComponent },
   { path: 'newskill', component: NewSkillComponent},
   { path: 'editskill/:id', component: EditSkillComponent},
-  { path: 'editAcercaDe/:id', component: EditAcercaDeComponent}
+  { path: 'editAcercaDe/:id', component: EditAcercaDeComponent},
+  { path: 'proyectos', component: ProyectosComponent},
+  { path: 'nuevoProyecto', component: NuevoProyectoComponent},
+  { path: 'editarProyecto/:id', component: EditarProyectoComponent},
 
 
 

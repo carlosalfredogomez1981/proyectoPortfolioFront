@@ -10,7 +10,7 @@ import { AcercaDeComponent } from './componentes/contenido/acerca-de/acerca-de.c
 import { FormacionAcademicaComponent } from './componentes/contenido/formacion-academica/formacion-academica.component';
 import { ExperienciaLaboralComponent } from './componentes/contenido/experiencia-laboral/experiencia-laboral.component';
 import { ProgresoComponent } from './componentes/contenido/progreso/progreso.component';
-import { RedesSocialesComponent } from './componentes/contenido/redes-sociales/redes-sociales.component';
+
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CirculosProgresoComponent } from './componentes/contenido/circulos-progreso/circulos-progreso.component';
@@ -43,7 +43,7 @@ import { EditarProyectoComponent } from './componentes/contenido/proyectos/edita
     FormacionAcademicaComponent,
     ExperienciaLaboralComponent,
     ProgresoComponent,
-    RedesSocialesComponent,
+
     CirculosProgresoComponent,
     ProyectosComponent,
     FooterComponent,

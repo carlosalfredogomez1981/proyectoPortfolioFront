@@ -22,10 +22,10 @@ descripcionExperiencia : string ='';
     this.sExperiencia.save(expe).subscribe(
       data=>{
         alert("experiencia nueva añadida");
-    this.router.navigate(['laboral']);
+    this.router.navigate(['proyecto']);
   }, err =>{
     alert("fallo");
-  this.router.navigate(['laboral']);
+  this.router.navigate(['proyectol']);
 })
   }
 

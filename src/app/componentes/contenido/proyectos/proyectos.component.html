@@ -1,14 +1,101 @@
 <div class="contenedor_primario">
+  <div class="container" style="text-align: center">
+    <button class="boton" routerLink="/">REGRESAR</button>
 
-  <div class="container" style="text-align: center;">
-    <button class=" boton"routerLink="/">REGRESAR</button>
-    </div> 
+    <h3 style="color: black">Algunos Proyectos Realizados</h3> <br>
 
-<h3 style="color: black;">Algunos Proyectos WEB Realizados</h3>
+    <div class="container" style="text-align: center">
+      <div class="row" *ngFor="let Proyecto of proyec">
+        <div class="col-8 border border-dark mb-5 p-2">
+          <img
+            src="{{ Proyecto.imgProyecto }}"
+            class="card-img-top"
+            alt="imagen del proyecto"
+          />
 
+          <div class="card-body">
+            <h5 class="card-title">{{ Proyecto.nombre }}</h5>
+            <p class="card-text">{{ Proyecto.descripcion }}</p>
+            <a
+              href="{{ Proyecto.urlProyecto }}"
+              class="btn btn-primary"
+              target="_blank"
+            >
+              Enlace</a
+            >
+          </div>
 
+          <div class="card-footer">
+            <button
+              *ngIf="isLogged"
+              class="btn btn-warning"
+              routerLink="/editarProyecto/{{ Proyecto.id }}"
+            >
+              editar
+            </button>
 
+            <button
+              *ngIf="isLogged"
+              class="btn btn-danger m-1"
+              (click)="delete(Proyecto.id)"
+            >
+              borrar
+            </button>
+            <br> <br>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
 
+  <button
+    type="button"
+    routerLink="/nuevoProyecto"
+    *ngIf="isLogged"
+    class="btn btn-warning m-3"
+  >
+    NUEVO PROYECTO
+  </button>
+</div>
+
+<app-footer></app-footer>
+
+<!--
+
+  <div class="card-header ">
+    Nombre del Proyecto <h5>{{ Proyecto.nombre }}</h5> 
+  </div>
+  <div class="card-body">
+   <h5> Descripcion </h5>
+    <p class="card-text">{{ Proyecto.descripcion }}</p>
+  </div>
+  <div class="card-body">
+    <h5> URL </h5>
+    <p class="card-text">
+      {{ Proyecto.urlProyecto }}</p>
+  </div>
+  <div class="card-body">
+    <p class="card-text">{{ Proyecto.imgProyecto }}</p>
+  </div>
+
+  <div class="card-footer ">
+    <button
+      *ngIf="isLogged"
+      class="btn btn-warning"
+      routerLink="/editarProyecto/{{ Proyecto.id }}">
+      editar
+    </button>
+
+    <button 
+      *ngIf="isLogged"
+      class="btn btn-danger m-1"
+      (click)="delete(Proyecto.id)">
+      borrar
+    </button>
+  </div>
+</div> -->
+
+<!--
 <div class="contenedor">
     <div class="row">
 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -34,4 +121,5 @@
     
    
 
-</div></div></div><app-footer></app-footer>
+</div></div></div>
+-->
