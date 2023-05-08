@@ -2,7 +2,14 @@
   <div class="container" style="text-align: center">
     <button class="boton" routerLink="/">REGRESAR</button>
 
-    <h3 style="color: black">Algunos Proyectos Realizados</h3> <br>
+    <h3 style="color: black">Algunos Proyectos Realizados</h3> 
+    <button
+    type="button"
+    routerLink="/nuevoProyecto"
+    *ngIf="isLogged"
+    class="btn btn-warning m-3">
+   CARGAR NUEVO PROYECTO
+  </button>
 
     <div class="container" style="text-align: center">
       <div class="row" *ngFor="let Proyecto of proyec">
@@ -46,18 +53,11 @@
         </div>  
       </div>
     </div>
-  </div>
+ 
 
-  <button
-    type="button"
-    routerLink="/nuevoProyecto"
-    *ngIf="isLogged"
-    class="btn btn-warning m-3"
-  >
-    NUEVO PROYECTO
-  </button>
+
 </div>
-
+</div>
 <app-footer></app-footer>
 
 <!--

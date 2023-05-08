@@ -33,5 +33,13 @@ footer {
   }
  
   
-  
+  #contacto:target {
+    background-color: rgba(0, 255, 42, 0.655);
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.346);
+    font-size: 18px;
+    padding:10px
+  }
   

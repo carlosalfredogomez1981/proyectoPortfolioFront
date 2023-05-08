@@ -11,6 +11,10 @@ export class persona
   mail: string;
   telefono: string;
   descripcion: string;
+  github: string;
+  facebook : string;
+  instagram: string;
+  whatsapp: string
 
   constructor(
     nombre: string,
@@ -22,7 +26,11 @@ export class persona
     fecha_nacimiento: string,
     mail: string,
     telefono: string,
-    descripcion: string
+    descripcion: string,
+    github: string,
+    facebook : string,
+    instagram: string,
+    whatsapp: string
   ) {
     this.nombre = nombre;
     this.apellido = apellido;
@@ -34,5 +42,10 @@ export class persona
     this.mail = mail;
     this.telefono = telefono;
     this.descripcion = descripcion;
+    this.github = github;
+    this.facebook = facebook;
+    this.instagram = instagram;
+    this.whatsapp = whatsapp;
+
   }
 }

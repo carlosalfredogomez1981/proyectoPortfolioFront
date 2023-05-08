@@ -14,7 +14,7 @@ import { TokenService } from 'src/app/servicios/token.service';
 
 export class AcercaDeComponent implements OnInit {
   
-  persona: persona = new persona ("","","","","","","","","",""); 
+  persona: persona = new persona ("","","","","","","","","","","","","",""); 
 
     constructor(public personaService: PersonaService, private tokenService: TokenService){}
 

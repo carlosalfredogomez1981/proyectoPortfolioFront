@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CirculosProgresoComponent } from './componentes/contenido/circulos-progreso/circulos-progreso.component';
 import { ExperienciaLaboralComponent } from './componentes/contenido/experiencia-laboral/experiencia-laboral.component';
 import { FormacionAcademicaComponent } from './componentes/contenido/formacion-academica/formacion-academica.component';
-import { ProgresoComponent } from './componentes/contenido/progreso/progreso.component';
+
 
 import { ProyectosComponent } from './componentes/contenido/proyectos/proyectos.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: 'nueva', component: NewExperienciaComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'laboral', component: ExperienciaLaboralComponent },
-  { path: 'tecnologias', component: ProgresoComponent },
+  
   { path: 'habilidades', component: CirculosProgresoComponent },
   { path: 'formacion', component: FormacionAcademicaComponent },
   { path: 'proyectos', component: ProyectosComponent },

@@ -10,7 +10,7 @@ import { TokenService } from 'src/app/servicios/token.service';
   styleUrls: ['./footer.component.css']
 })
 
-export class FooterComponent implements OnInit{persona: persona = new persona ("","","","","","","","","",""); 
+export class FooterComponent implements OnInit{persona: persona = new persona ("","","","","","","","","","","","","",""); 
 
 constructor(public personaService: PersonaService, private tokenService: TokenService){}
 
