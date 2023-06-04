@@ -11,7 +11,7 @@ import { QuinceComponent } from './quince/quince.component';
 import { EnlacesComponent } from './enlaces/enlaces.component';
 import { PekesComponent } from './pekes/pekes.component';
 import { ContactosComponent } from './contactos/contactos.component';
-import { PresupuestosComponent } from './presupuestos/presupuestos.component';
+
 import { VacioComponent } from './vacio/vacio.component';
 import { HomeComponent } from './home/home.component';
 import { QueLeOfrecemosComponent } from './que-le-ofrecemos/que-le-ofrecemos.component';
@@ -27,7 +27,7 @@ import { QueLeOfrecemosComponent } from './que-le-ofrecemos/que-le-ofrecemos.com
     EnlacesComponent,
     PekesComponent,
     ContactosComponent,
-    PresupuestosComponent,
+
     VacioComponent,
     HomeComponent,
     QueLeOfrecemosComponent

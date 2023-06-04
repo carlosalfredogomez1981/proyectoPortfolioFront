@@ -1,10 +1,73 @@
 #banner{
-   
-    box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.575);
-  
-    position: relative;
-    z-index: 1;
+ 
+  margin-top: 2px;
+    
+}
+.col-4{
+    margin:0px;
+    padding: 0px;
+}
+.row{
+    margin: 1px;
 }
 
+h1{
+  color:chocolate
+}
 
+h2{
+  color: rgb(4, 135, 4);
+}
 
+h4{
+  color: blue;
+}
+.centrar{
+
+  text-align: center;
+  padding:10px
+}
+.box2{
+  background-image: linear-gradient(to top, #ffffff 0%, #00000013 100%);
+  color:rgb(0, 0, 0);
+  border:1px solid   #00000035 ;
+  margin-bottom: 10px;
+  padding:10px;
+ 
+  box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.243);
+  
+}
+
+a{
+  background-color: rgba(0, 27, 146, 0.631);
+  color:white;
+  text-decoration: none;
+  list-style: none;
+  padding: 8px;
+  margin:2px;
+  border-radius: 5px;
+ 
+}
+
+a:hover{
+  background-color: rgba(255, 255, 255, 0.631);
+  color:rgb(38, 5, 169);
+  text-decoration: none;
+  list-style: none;
+  padding: 8px;
+  margin:2px;
+  border-radius: 1px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.271);
+ 
+}
+
+.box3{
+  
+  color:rgb(0, 0, 0);
+ 
+  margin-bottom: 10px;
+  padding:15px;
+  border-radius: 15px;
+  
+  
+}
