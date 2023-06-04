@@ -1,3 +1,4 @@
+<app-barra-nav-superior></app-barra-nav-superior>
 <div class="contenedor_primario">
   <div class="container" style="text-align: center">
     <button class="boton" routerLink="/">REGRESAR</button>
@@ -13,11 +14,11 @@
 
     <div class="container" style="text-align: center">
       <div class="row" *ngFor="let Proyecto of proyec">
-        <div class="col-8 border border-dark mb-5 p-2">
+        <div class="col-12 border  mb-5 p-2">
           <img
             src="{{ Proyecto.imgProyecto }}"
             class="card-img-top"
-            alt="imagen del proyecto"
+            alt="imagen del proyecto" 
           />
 
           <div class="card-body">

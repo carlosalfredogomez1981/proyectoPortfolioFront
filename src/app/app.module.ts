@@ -40,8 +40,6 @@ import { EditarProyectoComponent } from './componentes/contenido/proyectos/edita
     AcercaDeComponent,
     FormacionAcademicaComponent,
     ExperienciaLaboralComponent,
-    
-
     CirculosProgresoComponent,
     ProyectosComponent,
     FooterComponent,

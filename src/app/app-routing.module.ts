@@ -25,11 +25,9 @@ const routes: Routes = [
   { path: 'nueva', component: NewExperienciaComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'laboral', component: ExperienciaLaboralComponent },
-  
   { path: 'habilidades', component: CirculosProgresoComponent },
   { path: 'formacion', component: FormacionAcademicaComponent },
   { path: 'proyectos', component: ProyectosComponent },
-
   { path: 'login', component: LoginComponent },
   { path: 'edit/:id', component:EditExperienciaComponent },
   { path: 'nuevaEdu', component:NeweducacionComponent},
@@ -40,7 +38,6 @@ const routes: Routes = [
   { path: 'proyectos', component: ProyectosComponent},
   { path: 'nuevoProyecto', component: NuevoProyectoComponent},
   { path: 'editarProyecto/:id', component: EditarProyectoComponent},
-
 
 
 ];

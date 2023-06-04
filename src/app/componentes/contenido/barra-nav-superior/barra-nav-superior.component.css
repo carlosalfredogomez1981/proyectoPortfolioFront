@@ -11,7 +11,9 @@
     margin: 0px 20px 0px 20px
  }
 
-
+.background{
+    background-color: rgba(2, 59, 139, 0.5);
+}
 
 .hamburguesa{
    border: 1px solid white;

@@ -10,7 +10,12 @@ import { LoginUsuario } from '../model/login-usuario';
 })
 export class AuthService {
 
-authURL = 'http://localhost:8080/auth/'
+//authURL = 'http://localhost:8080/auth/'
+
+authURL = 'https://carlos-app.onrender.com/auth/'
+
+
+//authURL = 'http://proyectoportfoliobackend-production.up.railway.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

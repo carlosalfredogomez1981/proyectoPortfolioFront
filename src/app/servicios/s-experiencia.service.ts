@@ -8,7 +8,13 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 
-expURL = 'http://localhost:8080/explab/'; 
+//expURL =  'http://proyectoportfoliobackend-production.up.railway.app/explab/'    
+
+//expURL = 'http://localhost:8080/explab/'; 
+
+expURL = 'https://carlos-app.onrender.com/explab/'; 
+
+
 
   constructor(private httpClient : HttpClient) { }
 

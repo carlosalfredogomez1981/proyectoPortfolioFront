@@ -8,7 +8,11 @@ import { Observable } from 'rxjs';
 })
 export class SproyectoService {
 
-  URL = 'http://localhost:8080/proyectos/';
+   //URL = 'http://proyectoportfoliobackend-production.up.railway.app/proyectos/'  
+  
+ //URL = 'http://localhost:8080/proyectos/';
+
+ URL = 'https://carlos-app.onrender.com/proyectos/';
 
   constructor(private httpClient: HttpClient ) { }
 

@@ -1,8 +1,8 @@
 
 
  
-
-  <nav class="navbar navbar-expand-lg navbar-light  ">
+<div class="background"> 
+   <nav class="navbar navbar-expand-lg navbar-light  ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="../../../../assets/LOGO ARG.png" alt="logo argentina programa" id="logo" width="250px"></a>
       <h6 style="color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">CARLOS ALFREDO GOMEZ</h6>
@@ -26,7 +26,7 @@
           </li>
           <li >
             <!--<a class="login" routerLink="/login">LOGIN</a> --> 
-            <button type="button" class="btn btn-outline-ligth" (click)="login()" *ngIf="!isLogged" >INGRESAR</button>
+            <button type="button" class="btn btn-outline-ligth" (click)="login()" *ngIf="!isLogged" style="color:white">INGRESAR</button>
             <button type="button" class="btn btn-outline-ligth" (click)="onLogOut()" *ngIf="isLogged" >SALIR</button>
           </li>
          
@@ -39,6 +39,7 @@
       </div>
     </div>
   </nav>
+</div>
 
 
 

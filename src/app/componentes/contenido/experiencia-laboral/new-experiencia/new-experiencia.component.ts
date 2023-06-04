@@ -11,7 +11,7 @@ import { SExperienciaService } from 'src/app/servicios/s-experiencia.service';
 })
 export class NewExperienciaComponent implements OnInit{
 nombreExperiencia : string ='';
-descripcionExperiencia : string ='';
+descripcionExperiencia : string =''; 
 
   constructor(private sExperiencia: SExperienciaService, private router: Router){}
   ngOnInit():void{

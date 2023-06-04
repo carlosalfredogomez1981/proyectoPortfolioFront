@@ -43,7 +43,7 @@ this.authService.login(this.loginUsuario).subscribe(data=>{
     this.isLogged = false;
     this.isLogginFail = true;
     this.errMsj = err.error.mensaje;
-    console.log(this.errMsj);
+    console.log(this.errMsj + "salio mal");
   })
 }
 
